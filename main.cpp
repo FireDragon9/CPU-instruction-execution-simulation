@@ -25,13 +25,13 @@ class CPU{
 
     void execute(operations& type, int* data){
       
-      int result;
+
 
       if (type == ADD && this->data.size() >> 1){ // is the ADD operation? ok then I'll add them all
          
-          result = accumulate(this->data.begin(), this->data.end(), 0);
+          AC = accumulate(this->data.begin(), this->data.end(), 0);
           
-          printf("The result is: %i\n", result);
+          printf("The result is: %i\n", AC);
           
           //stopping 
           run_bit = false;
